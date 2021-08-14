@@ -1,0 +1,12 @@
+server:
+  port: 9091
+  servlet:
+    context-path: /api/client/v1
+
+spring:
+  application:
+    name: mvc-client
+
+application:
+  server:
+    base-url: http://localhost:9090/api/server/v1

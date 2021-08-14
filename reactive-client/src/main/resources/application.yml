@@ -1,0 +1,24 @@
+server:
+  netty:
+
+  port: 9092
+  # Below path will not work as its for servlet
+  servlet:
+    context-path: /api/client/v2
+
+spring:
+  application:
+    name: reactive-client
+  webflux:
+    base-path: /api/client/v2
+
+application:
+  server:
+    base-url: http://localhost:9090/api/server/v1
+
+logging:
+  level:
+    root: Debug
+ribbon:
+  eureka:
+    enabled: false
